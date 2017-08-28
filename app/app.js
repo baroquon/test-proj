@@ -16,3 +16,10 @@ App = Ember.Application.extend({
 loadInitializers(App, config.modulePrefix);
 
 export default App;
+
+define('math', [], function(){
+  return {
+    default: Math,
+    PI: Math.PI
+  }
+});
