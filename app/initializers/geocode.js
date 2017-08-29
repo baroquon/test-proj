@@ -1,5 +1,4 @@
 export function initialize(application) {
-  // application.inject('route', 'foo', 'service:foo');
   application.deferReadiness();
   const geo = navigator.geolocation;
   geo.getCurrentPosition(pos => {
