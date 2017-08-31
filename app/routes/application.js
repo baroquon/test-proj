@@ -7,6 +7,7 @@ export default Ember.Route.extend({
     console.log('PI', PI);
   },
   setupController(controller, model){
-    controller.set('loc', Ember.getOwner(this).lookup('data:location'))
+    controller.set('loc', Ember.getOwner(this).lookup('data:location'));
+    controller.set('request', Ember.getOwner(this).lookup('data:request'));
   }
 });
